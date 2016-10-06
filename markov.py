@@ -116,7 +116,7 @@ def make_text(chains):
 
     # Runs loop to: 1)Grab random value, append to text string, and reassign new key
     # Limits text string to 1000 char 
-    while len(text) < 140:
+    while len(text) < 120:
         value = choice(chains[current_key])
         text += value + " "
         current_key = (current_key[1], current_key[2], value)
@@ -129,7 +129,7 @@ def make_text(chains):
             else:
                 text = text[:index]
            
-    return text
+    return text + "#hbgracefall16"
 
 def post_to_twitter(tweet):
 
